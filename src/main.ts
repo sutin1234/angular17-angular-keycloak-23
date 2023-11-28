@@ -1,6 +1,12 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { appConfig } from './app/app.config';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+declare var window: any
+
+bootstrapApplication(AppComponent, appConfig).then(ref => {
+  // if (window['ngRef']) {
+  //   window['ngRef'].destroy();
+  // }
+  // window['ngRef'] = ref;
+}).catch((err) => console.error(err));

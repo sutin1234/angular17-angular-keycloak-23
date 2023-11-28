@@ -17,6 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "js-sha256",
+              "base64-js"
+            ],
             "outputPath": "dist/angular-keycloak",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -102,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b3dd99bd-88ad-4872-bab1-630844e8927e"
   }
 }

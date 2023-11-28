@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Run Keycloak docker
+
+`$ docker run --name keycloak -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=password -p 8080:8080 quay.io/keycloak/keycloak`
